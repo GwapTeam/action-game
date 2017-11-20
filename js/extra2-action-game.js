@@ -4,7 +4,7 @@ window.onload = function() {
     game.preload("img/chara1.png","img/map2.gif","img/start.png","img/clear.png","img/end.png");
     game.onload = function() {
 
-        var createTitleScene = function() {
+        function createTitleScene() {
             var scene = new Scene();
             var startImage = new Sprite(236, 48);
             startImage.image = game.assets["img/start.png"];
@@ -108,7 +108,7 @@ window.onload = function() {
             return scene;
         }
 
-        var createGameoverScene = function () {
+        function createGameoverScene() {
             var scene = new Scene();
             var startImage = new Sprite(190, 97);
             startImage.image = game.assets["img/end.png"];
